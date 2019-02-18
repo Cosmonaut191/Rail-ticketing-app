@@ -25,3 +25,12 @@ def first_screen():
     else:
         return choice
 
+def input_password(check=True):
+    password = raw_input("Enter Password :")
+    if check and len(password) == 0 :
+        print '\n'
+        print "Enter password with atleast one char"
+        input_password()
+    return password     
+    
+
